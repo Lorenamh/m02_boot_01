@@ -8,7 +8,7 @@ class Runner():
         ixCustome=random.randint(0,4)
         self.custome = pygame.image.load("images/{}.png".format(self.__customes[ixCustome]))
         self.position = [x,y]
-        self.name = "Tortuga"
+        self.name = self.__customes[ixCustome]
         
     def avanzar(self):
         self.position[0] += random.randint(1,6)
